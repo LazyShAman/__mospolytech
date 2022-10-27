@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Clients.ClientsController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1E211D;">
+                    <children>
+                        <AnchorPane layoutX="-8.0" layoutY="70.0" prefHeight="274.0" prefWidth="608.0" style="-fx-background-color: #E9EDE9;">
+                            <children>
+                                <TableView fx:id="Clients" layoutX="23.0" layoutY="23.0" prefHeight="227.0" prefWidth="562.0" style="-fx-border-color: #E9EDE9; -fx-opacity: 75%;">
+                                    <columns>
+                                        <TableColumn fx:id="id" prefWidth="48.66665267944336" text="ID" />
+                                        <TableColumn fx:id="legal_entity_name" prefWidth="202.66666412353516" text="Legal entity name" />
+                                        <TableColumn fx:id="bank_details" prefWidth="325.3332824707031" text="Bank details" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                        <Label layoutX="14.0" layoutY="17.0" prefHeight="46.0" prefWidth="179.0" text="STORAGE" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="43.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="193.0" layoutY="16.0" prefHeight="46.0" prefWidth="139.0" text="Clients" textFill="#cc2828">
+                            <font>
+                                <Font name="French Script MT" size="40.0" />
+                            </font>
+                        </Label>
+                        <ButtonBar layoutY="354.0" prefHeight="40.0" prefWidth="337.0">
+                            <buttons>
+                                <Button fx:id="goodsButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-border-radius: 0; -fx-background-radius: 0;" text="Goods" textAlignment="CENTER" textFill="#64615a">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button fx:id="racksButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" style="-fx-border-radius: 0; -fx-background-radius: 0;" text="Racks" textAlignment="CENTER" textFill="#64615a">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button fx:id="premisessButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" style="-fx-border-radius: 0; -fx-background-radius: 0;" text="Premises" textAlignment="CENTER" textFill="#64615a">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                            </buttons>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ButtonBar>
+                  <ButtonBar buttonMinWidth="40.0" layoutX="440.0" layoutY="354.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="159.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <buttons>
+                        <Button fx:id="delete" alignment="CENTER" contentDisplay="CENTER" maxWidth="40.0" minWidth="38.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="40.0" style="-fx-border-radius: 0; -fx-background-radius: 0; -fx-background-color: #CC2828;" text="–" textAlignment="CENTER" textFill="#101011">
+                           <font>
+                              <Font name="French Script MT" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="add" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="40.0" style="-fx-border-radius: 0; -fx-background-radius: 0; -fx-background-color: #CC2828;" text="+" textAlignment="CENTER" textFill="#101011">
+                           <font>
+                              <Font name="French Script MT" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="find" alignment="CENTER" contentDisplay="CENTER" minHeight="32.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" style="-fx-border-radius: 0; -fx-background-radius: 0; -fx-background-color: #CC2828;" text="🔍" textAlignment="CENTER" textFill="#101011">
+                           <font>
+                              <Font name="French Script MT" size="8.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </buttons>
+                  </ButtonBar>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
